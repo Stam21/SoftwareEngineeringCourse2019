@@ -1,7 +1,7 @@
 .project
 .settings
-gradeshistogram/.claspath
+gradeshistogram/.classpath
 gradeshistogram/.project 
 gradeshistogram/sh.exe.stackdump
 gradeshistogram/.settings
-gradeshistogram/.target
+gradeshistogram/target/
