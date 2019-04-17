@@ -27,10 +27,13 @@ so you can compile your Java code, run any tests, and finish by packaging the co
 
 ## Running Application
 
-You can run the program with command line argument. More specifically, you will run the jar file that is created with the following command:
+### [Source Code Metrics](Metrics)
+You can run the application by giving two command line arguments. More specifically, you will run the jar file with dependencies that is created after building with maven.
+You need to type the following command in the git bash:
 ```
-java -jar <dependencies.jar-path> <file.txt-path>
+java -jar <dependencies.jar> <filewithcode> <string or regex>
 ```
+[README](seip2019/metrics/README.md) | For more info about this application
 
 ## Versions
 
