@@ -10,5 +10,6 @@
 	<description>This project is about getting more familiar with build automation tools</description>
 	<modules>
 		<module>gradeshistogram</module>
+		<module>metrics</module>
 	</modules>
 </project>
