@@ -19,7 +19,7 @@
 				<configuration>
 					<archive>
 						<manifest>
-							<mainClass>codeAnalyzer.Client</mainClass>
+							<mainClass>codeAnalyzers.Client</mainClass>
 						</manifest>
 					</archive>
 				</configuration>
