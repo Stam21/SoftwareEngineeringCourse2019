@@ -19,7 +19,7 @@
 				<configuration>
 					<archive>
 						<manifest>
-							<mainClass>se2019package.Client</mainClass>
+							<mainClass>codeAnalyzer.Client</mainClass>
 						</manifest>
 					</archive>
 				</configuration>
