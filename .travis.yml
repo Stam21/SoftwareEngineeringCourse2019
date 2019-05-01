@@ -6,10 +6,12 @@ jdk:
 branches:                 
 only:
   - master
+  
+before_script: 
+  - cd 
  
 script:
-  - mvn clean
-  - mvn package jacoco:reportcoveralls:report
+  - mvn clean package jacoco:report coveralls:report
 
 after_success:
-  - bash <(curl -s https://codecov.io/bash) -t _your_token_
+  - bash <(curl -s https://codecov.io/bash) -t 480071c4-23f8-4d9b-b06e-9ed5196102cc
