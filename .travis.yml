@@ -1,14 +1,14 @@
 language: java                
 
 jdk:                         
-  -oraclejdk8
+  - oraclejdk8
   
 branches:                 
 only:
-  -master
+  - master
  
 script:
-  -mvn clean package
+  - mvn clean package
 
 after_success:
-  -echo "Process terminated successfully"
+  - echo "Process terminated successfully"
