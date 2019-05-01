@@ -8,10 +8,6 @@
 	<packaging>pom</packaging>
 	<name>Parent - PracticeMaven</name>
 	<description>This project is about getting more familiar with build automation tools</description>
-	<modules>
-		<module>gradeshistogram</module>
-		<module>unitTesting</module>
-	</modules>
 	
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -67,4 +63,10 @@
 			</plugin>
 		</plugins>
 	</build>
+	
+	<modules>
+		<module>gradeshistogram</module>
+		<module>unitTesting</module>
+	</modules>
+	
 </project>
