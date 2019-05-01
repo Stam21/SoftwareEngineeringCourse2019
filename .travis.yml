@@ -8,7 +8,8 @@ only:
   - master
  
 script:
-  - mvn clean package
+  - mvn clean
+  - mvn package jacoco:reportcoveralls:report
 
 after_success:
-  - echo "Process terminated successfully"
+  - bash <(curl -s https://codecov.io/bash) -t _your_token_
