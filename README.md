@@ -1,5 +1,9 @@
 # SoftwareEngineeringCourse2019
+[![Build Status](https://travis-ci.com/Stam21/SoftwareEngineeringCourse2019.svg?token=cLJyNCHjqFzPy5Mv4uzh&branch=master)](https://travis-ci.com/Stam21/SoftwareEngineeringCourse2019)
+[![codecov](https://codecov.io/gh/Stam21/SoftwareEngineeringCourse2019/branch/master/graph/badge.svg?token=48ncmVWRtB)](https://codecov.io/gh/Stam21/SoftwareEngineeringCourse2019)
+
 This repository is about getting more familiar in developing software.
+
 
 ## Built With 
 
