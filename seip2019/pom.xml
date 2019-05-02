@@ -6,7 +6,7 @@
 	<artifactId>seip2019</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
-	<name>Parent - PracticeMaven</name>
+	<name>Parent-PracticeMaven</name>
 	<description>This project is about getting more familiar with build automation tools</description>
 	
 	<properties>
@@ -59,6 +59,6 @@
 	<modules>
 		<module>gradeshistogram</module>
 		<module>unitTesting</module>
+		<module>metrics</module>
 	</modules>
-	
 </project>
