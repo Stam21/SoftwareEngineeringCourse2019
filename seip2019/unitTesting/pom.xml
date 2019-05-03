@@ -8,7 +8,7 @@
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 	<artifactId>unitTesting</artifactId>
-	<name>test cases</name>
+	<name>Perform Unit Tests</name>
 	<description>This is a maven project</description>
 
 	<dependencies>
