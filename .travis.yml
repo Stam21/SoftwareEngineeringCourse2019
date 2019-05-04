@@ -6,10 +6,6 @@ jdk:
 branches:                 
 only:
   - master
-
-env:
-  global:
-    - CODECOV_TOKEN=: 480071c4-23f8-4d9b-b06e-9ed5196102cc
   
 before_script: 
   - cd seip2019
