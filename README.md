@@ -39,6 +39,16 @@ java -jar <dependencies.jar> <filewithcode> <string or regex>
 ```
 [README](seip2019/metrics/README.md) | For more info about this application
 
+### [Perform Unit Tests](Unit Testing)
+
+### [GradesHistogram](GradesHistogram)
+The application can run by giving one command line argument.
+The command that you need to type after building the project is:
+```
+java -jar <dependencies.jar> <filepath>
+```
+
+
 ## Versions
 
 * ***[Java SE Development Kit 8u201](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)***
