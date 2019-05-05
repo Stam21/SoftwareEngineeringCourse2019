@@ -31,7 +31,7 @@ so you can compile your Java code, run any tests, and finish by packaging the co
 
 ## Running Application
 
-### [Source Code Metrics](Metrics)
+### [Source Code Metrics](seip2019/metrics/README.md)
 You can run the application by giving two command line arguments. More specifically, you will run the jar file with dependencies that is created after building with maven.
 You need to type the following command in the git bash:
 ```
@@ -39,14 +39,16 @@ java -jar <dependencies.jar> <filewithcode> <string or regex>
 ```
 [README](seip2019/metrics/README.md) | For more info about this application
 
-### [Perform Unit Tests](Unit Testing)
+### [Unit Testing](seip2019/unitTesting/README.md)
+[README](seip2019/unitTesting/README.md) | For more info about this application
 
-### [GradesHistogram](GradesHistogram)
+### [GradesHistogram](seip2019/gradeshistogram/README.md)
 The application can run by giving one command line argument.
 The command that you need to type after building the project is:
 ```
 java -jar <dependencies.jar> <filepath>
 ```
+[README](seip2019/gradeshistogram/README.md) | For more info about this application
 
 
 ## Versions
