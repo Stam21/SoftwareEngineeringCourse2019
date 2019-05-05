@@ -9,8 +9,12 @@ package operations;
  */
 
 import org.junit.Test;
+import org.junit.rules.ExpectedException;
+
 import filehandlers.FileIO;
 import org.junit.Assert;
+import org.junit.Rule;
+
 import static org.mockito.Mockito.*;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -43,6 +47,20 @@ public class ArrayOperrationsTest {
 		Assert.assertArrayEquals(new int[] { -1, -4, -6, 1, 5 }, aop.reverseArray(resourceDirectory.toString()));
 	}
 
+	// Define an expected exception for cases that throw exception.
+	@Rule
+	public ExpectedException exception = ExpectedException.none();
+
+	@Test
+	public void test_reverseArray_empty() {
+
+		exception.expect(IllegalArgumentException.class);
+
+		// Using an empty text file from test/resources.
+		Path resourceDirectory = Paths.get("src", "test", "resources", "Empty");
+		aop.reverseArray(resourceDirectory.toString());
+	}
+
 	/**
 	 * This is test_findMaxInFile method which tests if findMaxInFile method from
 	 * ArrayOperrations class will return the max from the integers stored in the
@@ -59,6 +77,19 @@ public class ArrayOperrationsTest {
 		Path resourceDirectory = Paths.get("src", "test", "resources", "ValidInputNumbers.txt");
 		when(fio.readFile(resourceDirectory.toString())).thenReturn(filecontext);
 		Assert.assertEquals(6, aop.findMaxInFile(resourceDirectory.toString()));
+	}
+
+	@Test
+	public void test_findMaxInFile_empty() {
+		exception.expect(IllegalArgumentException.class);
+		FileIO fio = mock(FileIO.class);
+
+		int[] filecontext = {};
+
+		// Using an empty text file from test/resources.
+		Path resourceDirectory = Paths.get("src", "test", "resources", "Empty");
+		when(fio.readFile(resourceDirectory.toString())).thenReturn(filecontext);
+		aop.findMaxInFile(resourceDirectory.toString());
 	}
 
 }

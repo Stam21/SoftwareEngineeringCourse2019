@@ -47,9 +47,16 @@ public class IntegerOperationsTest {
 
 	// Add a negative and a positive integer. Expect an exception.
 	@Test
-	public void test_positive_inputs() {
+	public void test_positive_left() {
 		exception.expect(IllegalArgumentException.class);
-		inop.add(3, -2);
+		inop.add(4, -2);
+	}
+
+	// Add a negative and a positive integer. Expect an exception.
+	@Test
+	public void test_negative_right() {
+		exception.expect(IllegalArgumentException.class);
+		inop.add(-6, 3);
 	}
 
 	/**

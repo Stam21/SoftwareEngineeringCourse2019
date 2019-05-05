@@ -41,4 +41,13 @@ public class FileIOTest {
 		Assert.assertArrayEquals(fileContext, fio.readFile(resourceDirectory.toString()));
 	}
 
+	// test_FileNotFound method tests the case where the given file doesn't exist
+	@Test(expected = IllegalArgumentException.class)
+	public void test_FileNotFound() {
+		int[] fileContext = new int[] { 1, 4, 6, -1, -5 };
+
+		// Using a text file with integers from test/resources.
+		Path resourceDirectory = Paths.get("src", "test", "resources", "ValidInputNumbers2.txt");
+		Assert.assertArrayEquals(fileContext, fio.readFile(resourceDirectory.toString()));
+	}
 }
